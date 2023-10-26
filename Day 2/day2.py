@@ -3,18 +3,9 @@
 
 class Person:
     def __init__(self, name, age):
+        
         self.name = name
-        self.age = age
-
-    def validate_person_name(self, name):
-        if len(name) > 0:
-            return True
-        return False
-    
-    def validate_person_age(self, age):
-        if age >= 0:
-            return True
-        return False
+        self.age = int(age)
     
     def get_person_name(self):
         return self.name
