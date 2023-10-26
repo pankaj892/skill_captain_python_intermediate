@@ -1,14 +1,14 @@
-""" Bank Account Class with deposit and withdraw methods and a display_info method to display the account holder name, account number and account balance."""
-""" The init method takes in the account number, account balance and account holder name as parameters and assigns them to the instance variables of the class."""
+""" Bank Account Class with deposit and withdraw methods and a display_info method to display the account holder self, account number and account balance."""
+""" The init method takes in the account number, account balance and account holder self as parameters and assigns them to the instance variables of the class."""
 """ The validate_account_number method takes in the account number as a parameter and checks if the account number is 9 digits long. If it is, it returns True. If it is not, it returns False."""
 """ The validate_account_balance method takes in the account balance as a parameter and checks if the account balance is greater than or equal to 0. If it is, it returns True. If it is not, it returns False."""
-""" The validate_account_holder_name method takes in the account holder name as a parameter and checks if the length of the account holder name is greater than 0. If it is, it returns True. If it is not, it returns False."""
+""" The validate_account_holder_name method takes in the account holder self as a parameter and checks if the length of the account holder self is greater than 0. If it is, it returns True. If it is not, it returns False."""
 """ The get_account_balance method returns the account balance."""
 """ The get_account_number method returns the account number."""
-""" The get_account_holder_name method returns the account holder name."""
+""" The get_account_holder_name method returns the account holder self."""
 """ The set_account_balance method takes in the account balance as a parameter and assigns it to the account balance instance variable."""
 """ The set_account_number method takes in the account number as a parameter and assigns it to the account number instance variable."""
-""" The set_account_holder_name method takes in the account holder name as a parameter and assigns it to the account holder name instance variable."""
+""" The set_account_holder_name method takes in the account holder self as a parameter and assigns it to the account holder self instance variable."""
 
 
 class BankAccount:
@@ -64,7 +64,7 @@ class BankAccount:
     def deposit(self, amount):
         self.account_balance += amount
         return self.account_balance
-    '''The display_info method returns a string containing the account holder name, account number and account balance.'''
+    '''The display_info method returns a string containing the account holder self, account number and account balance.'''
 
     def display_info(self):
         return f"Account Holder Name: {self.account_holder_name}\nAccount Number: {self.account_number}\nAccount Balance: {self.account_balance}"
