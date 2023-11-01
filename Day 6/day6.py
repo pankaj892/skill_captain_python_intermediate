@@ -1,1 +1,1 @@
-''' Write to a file programatically using Python'''
+''' This program writes to a file programatically using a list in Python'''
