@@ -12,11 +12,11 @@ syllables = [
 # Create a function to generate a name
 def generate_name(used_names):
     name = random.choice(syllables) + random.choice(syllables) + random.choice(syllables)
-    name.capitalize()
+    capitalized_name = name.capitalize()
     if name in used_names:
         return generate_name(used_names)
-    used_names.add(name.capitalize())
-    return name.capitalize()
+    used_names.add(capitalized_name)
+    return capitalized_name
 
 # Ask the user how many names they would like to generate
 number_of_names = int(input('How many names would you like to generate? '))
