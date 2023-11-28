@@ -1,5 +1,8 @@
 """ Python code to implement classes and objects """
 
+from urllib import response
+
+
 class User:
     def __init__(self, name, email, password):
         self.name = name
@@ -13,14 +16,14 @@ class User:
         print("Password: ", self.password)
 
     def user_registration():
-        user_db = []
-
         name = input("Enter your name: ")
         email = input("Enter your email: ")
         password = input("Enter your password: ")
 
         for user in user_db:
             if user.email == email:
+                print("DB: ", user_db)
+                print(email)
                 print("User already exists")
                 return
 
@@ -28,4 +31,10 @@ class User:
         user_db.append(new_user)
         print("User created successfully")
 
-new_user = User.user_registration()
+user_db = []
+
+while True:
+    User.user_registration()
+    response = input("Do you want to continue? (Enter 'skip' to stop): ")
+    if response.lower() == 'skip':
+        break
