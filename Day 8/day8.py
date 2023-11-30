@@ -11,13 +11,14 @@ class Product:
         print("Quantity: ", self.quantity)
 
     def product_registration():
+        product_db = []
+        
         name = input("Enter product name: ")
-        price = input("Enter product price: ")
-        quantity = input("Enter product quantity: ")
+        price = int(input("Enter product price: "))
+        quantity = int(input("Enter product quantity: "))
 
         new_product = Product(name, price, quantity)
         product_db.append(new_product)
         print("Product created successfully")
-product_db = []
 
 Product.product_registration()
