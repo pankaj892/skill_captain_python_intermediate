@@ -28,8 +28,8 @@ class Cart:
         print("Product not found")
 
     def display_cart(self):
-        if len(self.product_list) == 0:
-            print("Cart is empty")
+        if len(self.product_list) <= 0:
+            raise ValueError("Cart is empty")
             return
         else:
             print("Cart Details: ")
